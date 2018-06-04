@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Account Info</title>
+</head>
+<body>
+<div class="container">
+    <h1 th:text="'Account Info Page for: ' + ${name} + '!'"/>
+
+    <a th:href="@{/}" class="btn btn-primary">Home</a>
+
+    <form id="logoutForm" th:action="@{/logout}" method="post">
+        <input type="submit" class="btn btn-danger" value="Logout"/>
+    </form>
+</div>
+</body>
+</html>
